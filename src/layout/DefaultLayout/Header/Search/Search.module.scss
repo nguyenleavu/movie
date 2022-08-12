@@ -1,0 +1,64 @@
+.wrapper {
+    width: 300px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    position: relative;
+    width: 90%;
+
+    input {
+        height: 40px;
+        width: 90%;
+        padding: 0 14px;
+        font-size: 1.6rem;
+        outline: none;
+        border: 2px solid rgb(112, 112, 112);
+        border-radius: 8px;
+        background-color: transparent;
+        color: #ccc;
+    }
+    .loading,
+    .clear {
+        position: absolute;
+        color: #ccc;
+        font-size: 1.6rem;
+        right: 10px;
+        top: 14px;
+        background-color: transparent;
+        cursor: pointer;
+    }
+    .loading {
+        user-select: none;
+        animation: spinner 1s linear infinite;
+        z-index: -1;
+    }
+}
+
+.box {
+    width: 400px;
+    height: calc(100vh - 400px);
+    border-radius: 8px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border: 2px solid rgb(68, 68, 68);
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+
+    &::-webkit-scrollbar {
+        width: 4px;
+        max-height: 50px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: rgb(99, 99, 99);
+    }
+}
+
+@keyframes spinner {
+    to {
+        transform: rotate(360deg);
+    }
+}

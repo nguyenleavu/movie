@@ -1,0 +1,156 @@
+.wrapper {
+    color: white;
+    width: 100%;
+    bottom: 10px;
+    margin-bottom: 3vw;
+    position: relative;
+    display: flex;
+    transition: transform 2s;
+}
+.title {
+    color: aliceblue;
+    font-size: 24px;
+    padding-bottom: 3rem;
+}
+
+.btn-left,
+.btn-right {
+    height: 10vw;
+    width: 20px;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+    color: transparent;
+    cursor: pointer;
+    position: absolute;
+    padding: 0 1vw;
+    transform: translateY(-1vw);
+
+    &:hover {
+        color: whitesmoke;
+        background: hsla(0, 0%, 8%, 0.5);
+    }
+}
+
+.btn-left {
+    left: -3vw;
+}
+
+.btn-right {
+    right: -3vw;
+}
+
+.img-box {
+    width: 100%;
+    cursor: pointer;
+    margin-right: 4px;
+    position: relative;
+    transition: transform 2s;
+
+    &:hover .trailer {
+        display: flex;
+        transition: transform 2s;
+    }
+}
+
+.trailer {
+    transition: 5s;
+    display: none;
+    position: absolute;
+    top: -9.28vw;
+    bottom: -3.28vw;
+    left: -3.705vw;
+    right: -3.705vw;
+    z-index: 9;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10px;
+    box-shadow: rgb(0 0 0 / 75%) 0px 3px 10px;
+    transition: transform 2s;
+}
+
+.btn-container {
+    background-color: #181818;
+    height: 100%;
+    width: 91%;
+    flex: 1;
+    transform: translateY(-4px);
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    box-shadow: rgb(0 0 0 / 75%) 0px 3px 10px;
+    padding: 1vw;
+    transition: transform 2s;
+
+    .btn-trailer {
+        display: flex;
+        justify-content: space-between;
+        cursor: pointer;
+        font-size: 2.2vw;
+
+        .play,
+        .more {
+            &:hover {
+                color: rgba(235, 232, 232, 0.84);
+            }
+        }
+    }
+    .overview {
+        margin-top: 0.5vw;
+
+        h4 {
+            font-size: 1.2vw;
+            padding: 0.5vw 0;
+        }
+    }
+}
+
+.img {
+    height: 8.66vw;
+    width: 15.2vw;
+}
+
+.modal {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: 99;
+    background-color: #3b3a3ad1;
+}
+
+.trailer-movie {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    background-color: #8bc6ec;
+    background-image: linear-gradient(135deg, #8bc6ec 0%, #9599e2 100%);
+    button {
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        color: white;
+        font-size: 20px;
+        background-color: transparent;
+        border: 1px solid #fff;
+        padding: 10px;
+        border-radius: 10px;
+        cursor: pointer;
+
+        &:hover {
+            background-color: rgba(174, 173, 173, 0.171);
+        }
+    }
+
+    h1 {
+        color: #fff;
+        font-size: 5rem;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        border: 1px solid #fff;
+        padding: 10px;
+        box-sizing: border-box;
+        border-radius: 4px;
+    }
+}
