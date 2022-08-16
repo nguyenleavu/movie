@@ -3,7 +3,7 @@ import Header from '~/layout/DefaultLayout/Header/Header';
 const DefaultLayout = ({ children }) => {
     return (
         <div>
-            <Header />          
+            <Header />
             <div>{children}</div>
         </div>
     );

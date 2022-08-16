@@ -6,9 +6,9 @@ import Banner from './Banner/Banner';
 const LazyRow = lazy(() => import('~/layout/DefaultLayout/Main/Row/Row'));
 
 const Main = () => {
-    useEffect(()=>{
-        document.title='Trang chủ - Movie'
-    },[])
+    useEffect(() => {
+        document.title = 'Trang chủ - Movie';
+    }, []);
     return (
         <div>
             <Suspense>

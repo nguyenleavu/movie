@@ -1,16 +1,15 @@
-import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 
 import classnames from 'classnames/bind';
-import style from './Header.module.scss';
-import Search from './Search/Search';
 import images from '~/assets/images/index';
 import { useUserAuth } from '~/context/UserAuthContext';
+import style from './Header.module.scss';
+import Search from './Search/Search';
 
 const cl = classnames.bind(style);
 
 const Header = () => {
-    const { logOut, user } = useUserAuth();
+    const { logOut } = useUserAuth();
     const navigate = useNavigate();
     const handleLogout = async () => {
         try {

@@ -1,0 +1,48 @@
+.wrapper {
+    position: relative;
+    margin-top: 100px;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.video {
+    z-index: 9;
+    cursor: pointer;
+    margin-left: 40px;
+
+    iframe {
+        height: 40vw;
+        width: 80vw;
+    }
+}
+
+.details {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+
+    img {
+        height: 20vw;
+        object-fit: contain;
+    }
+
+    .title {
+        margin-left: 20px;
+
+        h1 {
+            font-size: 3.5vw;
+            line-height: 5vw;
+        }
+
+        p {
+            width: 30vw;
+        }
+    }
+}
+.vote {
+    p {
+        font-size: 1.6vw;
+        padding-bottom: 1vw;
+    }
+}

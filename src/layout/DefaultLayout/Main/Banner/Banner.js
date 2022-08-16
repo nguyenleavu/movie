@@ -23,7 +23,6 @@ const Banner = () => {
 
     const [movies, setMovies] = useState([]);
     const [trailerUrl, setTrailerUrl] = useState('');
-    const [noTrailer, setNoTrailer] = useState(false);
     const [offTrailer, setOffTrailer] = useState(true);
 
     useEffect(() => {
@@ -44,7 +43,7 @@ const Banner = () => {
                 tmdbId: movie.id,
             }).then((url) => {
                 if (!url) {
-                    setNoTrailer(true);
+                    return;
                 }
                 const urlParams = new URLSearchParams(new URL(url).search);
                 setTrailerUrl(urlParams.get('v'));

@@ -6,6 +6,7 @@
     position: relative;
     display: flex;
     transition: transform 2s;
+    transition-delay: 1s;
 }
 .title {
     color: aliceblue;
@@ -46,10 +47,12 @@
     margin-right: 4px;
     position: relative;
     transition: transform 2s;
+    transition-delay: 1s;
 
     &:hover .trailer {
         display: flex;
         transition: transform 2s;
+        transition-delay: 1s;
     }
 }
 
@@ -67,6 +70,7 @@
     border-radius: 10px;
     box-shadow: rgb(0 0 0 / 75%) 0px 3px 10px;
     transition: transform 2s;
+    transition-delay: 1s;
 }
 
 .btn-container {
@@ -79,7 +83,8 @@
     border-bottom-left-radius: 10px;
     box-shadow: rgb(0 0 0 / 75%) 0px 3px 10px;
     padding: 1vw;
-    transition: transform 2s;
+    transition: 0.4s ease-out;
+    transition-delay: 1s;
 
     .btn-trailer {
         display: flex;
@@ -89,6 +94,7 @@
 
         .play,
         .more {
+            color: #fff;
             &:hover {
                 color: rgba(235, 232, 232, 0.84);
             }
